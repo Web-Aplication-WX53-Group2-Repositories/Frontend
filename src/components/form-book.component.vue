@@ -6,8 +6,13 @@
 
 <template>
   {{ $t('hello', {msg : 'Gustavo'}) }}
-  <pv-button label="Submit"/>
-  <pv-input-text/>
+
+  <br/>
+  <label for="name">Name</label>
+  <pv-input-text id = "name"/>
+
+  <br/>
+  <pv-button label="Submit" aria-label="submit"/>
 </template>
 
 <style scoped>
