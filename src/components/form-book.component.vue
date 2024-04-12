@@ -5,6 +5,7 @@
 </script>
 
 <template>
+  {{ $t('hello', {msg : 'Gustavo'}) }}
   <pv-button label="Submit"/>
   <pv-input-text/>
 </template>
