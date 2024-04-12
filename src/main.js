@@ -9,24 +9,9 @@ import 'primevue/resources/themes/aura-light-green/theme.css'
 import Button from "primevue/button";
 import InputText from "primevue/inputtext";
 //Vue I18n
-import { createI18n } from 'vue-i18n'
+import i18n from "@/locale/i18n.js";
 
 const app = createApp(App);
-
-const i18n = createI18n({
-    locale: 'es',
-    messages: {
-        en: {
-            hello: 'Hello {msg}'
-        },
-        es: {
-            hello: 'Hola {msg}'
-        },
-        jp: {
-            hello: 'こんにちは、世界'
-        }
-    }
-})
 
 app.use(PrimeVue);
 app.use(i18n);
